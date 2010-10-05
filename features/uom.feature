@@ -1,7 +1,7 @@
 Feature: Units of Measure
 
-  In order to purchase bulk items,
-  As a customer, I should be able to order bulk items by weight
+  In order to purchase bulk items along with non-bulk items
+  As a customer I should be able to order bulk items by decimal weight
   
   Scenario: Customer selects weight and adds product to cart
     Given I am on a product page or taxon page containing a product or products with a UOM of "LB"
@@ -28,9 +28,9 @@ Feature: Units of Measure
     And the product has a UOM of <UOM>
     And the price is <PRICE>
     And the picker picks <PICKED> <UOM>
-    And the picker adjusts the quantity in the order admin
+    And the picker adjusts the quantity of the line item in the order admin
     And the picker presses the "recalculate order total" button
-    Then the total price of the product line item in the cart should be <TOTAL>
+    Then the total price of the line item in the cart should be <TOTAL>
     
     Examples:
     | UOM | PRICE | PICKED | TOTAL |
