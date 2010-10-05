@@ -8,8 +8,9 @@ in the first implementation, design will support addition of units.
 Included:
 
 UnitOfMeasure Model with 2 calculators:
-* Each - wraps the standard existing total price calculations
-* Calculates 
+  
+* Each - wraps the standard existing product calculation
+* Weight - Calculates cost based on decimal weight * price
 
 Helper method for displaying the quantity message 
 (for use after quantity input elements, each, ea., pounds, lbs).

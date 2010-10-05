@@ -1,4 +1,4 @@
-Feature: Partial Units
+Feature: Units of Measure
 
   In order to purchase bulk items,
   As a customer, I should be able to order bulk items by weight
