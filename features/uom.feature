@@ -23,7 +23,7 @@ Feature: Units of Measure
     Then under Qty column, it should read "1.5 lbs"
     And under the Total column it should read "1.5"
     
-  Scenario Outline: Picker picks product (perhaps a peck of pickled peppers)
+  Scenario Outline: Picker picks a product (perhaps a peck of pickled peppers)
     Given a picker has an order sheet with a bulk product
     And the product has a UOM of <UOM>
     And the price is <PRICE>
